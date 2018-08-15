@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".activity.ManCatalogActivity"/>
         <activity android:name=".activity.WomanCatalogActivity"/>
+        <activity android:name=".activity.DetailCatalogActivity"/>
+
     </application>
 
 </manifest>

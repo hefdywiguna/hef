@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.Toast;
 
 import com.tutorial.criscom.myapplication.R;
 import com.tutorial.criscom.myapplication.adapter.CatalogAdapter;
@@ -25,6 +26,7 @@ public abstract class CatalogActivity extends AppCompatActivity {
         RecyclerView hairstyleList = findViewById(R.id.hairstyle_list);
         hairstyleList.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         hairstyleList.setAdapter(new CatalogAdapter(catalogList()));
+        Toast.makeText(this,getClass().getSimpleName(),Toast.LENGTH_LONG).show();
     }
 
     protected abstract List<Catalog> catalogList();
